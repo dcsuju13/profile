@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>profileClass</class>
+ <widget class="QMainWindow" name="profileClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>profile</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="tab_pre">
+         <attribute name="title">
+          <string>preprocess</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="Button_tip">
+            <property name="text">
+             <string>点出花瓣顶点</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="Button_curve">
+            <property name="text">
+             <string>侧边曲线</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="lineEdit_image"/>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="Button_contour">
+            <property name="text">
+             <string>花瓣轮廓</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="Button_point">
+            <property name="text">
+             <string>点出中轴点</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QScrollArea" name="sArea_image">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>605</width>
+               <height>416</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="MyLabel" name="label_image">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="Button_scan">
+            <property name="text">
+             <string>选择图片</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="2">
+           <widget class="QPushButton" name="Button_keypoint">
+            <property name="text">
+             <string>处理数据</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_surface">
+         <attribute name="title">
+          <string>surface fitting</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="2" column="1">
+           <widget class="QPushButton" name="Button_mesh">
+            <property name="text">
+             <string>模板花瓣网格</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QScrollArea" name="sArea_surface">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>605</width>
+               <height>445</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="Button_petal">
+            <property name="text">
+             <string>模板花瓣轮廓映射</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="Button_meshfitting">
+            <property name="text">
+             <string>模板花瓣网格变形</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_all">
+         <attribute name="title">
+          <string>all petals</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="sArea_all">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>605</width>
+               <height>474</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="Button_all">
+            <property name="text">
+             <string>完整网格</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">MyLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="profile.qrc"/>
+ </resources>
+ <connections/>
+</ui>
